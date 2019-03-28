@@ -16,4 +16,22 @@ public class DeckTest {
     public void deckStartsEmpty() {
         assertEquals(0, deck.getDeckCount());
     }
+
+    @Test
+    public void canCreateSuitArray(){
+        deck.getSuitArray();
+        assertEquals(4, deck.countSuits());
+    }
+
+    @Test
+    public void canCreateRankArray(){
+        deck.getRankArray();
+        assertEquals(13, deck.countRank());
+    }
+
+ //   @Test
+//    public void deckCanBeFilled(){
+//        deck.getCards();
+//        assertEquals(52, deck.getDeckCount());
+//    }
 }
