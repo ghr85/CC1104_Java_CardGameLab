@@ -22,7 +22,7 @@ public class CardTest {
     @Test
     public void queenHasValue10(){
         card = new Card(SuitType.HEARTS, Rank.QUEEN);
-        assertEquals(10,card.getValueFromEnum());
+        assertEquals(11,card.getValueFromEnum());
 
     }
 }
